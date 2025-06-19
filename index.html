@@ -3,36 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Episode 2: Attribute Binding and Basic Events</title>
+    <title>Episode 3: Lists and Computed Properties</title>
     <script src="https://unpkg.com/vue@3.2.33"></script>
+    <style></style>
 </head>
 <body>
 
 
     <div id="app">
-        <p>
-            <input type="text" v-model="greeting">
-        </p>
 
-        <p>
-            {{ greeting }} ({{ greeting.length }})
-        </p>
     </div>
 
 
     <script>
         Vue.createApp({
-            data () {
-                return {
-                    greeting: 'Hello World'
-                };
-            },
-
-            mounted() {
-                setTimeout(() => {
-                    this.greeting = 'Changed';
-                }, 3000);
-            }
+            
         }).mount('#app');
     </script>
 </body>
