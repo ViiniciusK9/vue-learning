@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="h-full grid place-items-center">
 
+    <div id="app">
+
+    </div>
+
+    <script>
+        let app = {};
+
+        Vue.createApp(app).mount('#app');
+    </script>
 </body>
-
 </html>
